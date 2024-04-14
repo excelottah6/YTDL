@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YouTube Downloader</title>
+    <link rel="stylesheet" href="yt.css">
+</head>
+<body>
+    <div class="youtube-container">
+        <h1>YouTube Downloader</h1>
+        <form id="youtube-download-form" class="youtube-form">
+            <input type="text" id="youtube-video-url" name="videoUrl" placeholder="Paste YouTube Video URL here">
+            <button type="submit">Download</button>
+        </form>
+        <div id="youtube-result" class="youtube-result">
+            <img id="youtube-thumbnail" src="" alt="Thumbnail">
+            <div class="details">
+                <h2 id="youtube-title"></h2>
+                <p id="youtube-description"></p>
+                <p id="youtube-duration"></p>
+            </div>
+            <div class="download-links">
+                <a id="youtube-download-360" href="" download>Download 360p</a>
+                <a id="youtube-download-720" href="" download>Download 720p</a>
+            </div>
+        </div>
+    </div>
+
+    <script src="yt.js"></script>
+</body>
+</html>
