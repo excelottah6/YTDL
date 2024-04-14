@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Instagram Downloader</title>
+    <link rel="stylesheet" href="instagram_styles.css">
+</head>
+<body>
+    <div class="instagram-container">
+        <h1>Instagram Downloader</h1>
+        <form id="instagram-download-form" class="instagram-form">
+            <input type="text" id="instagram-video-url" name="videoUrl" placeholder="Paste Instagram Video URL here">
+            <button type="submit">Download</button>
+        </form>
+        <div id="instagram-result" class="instagram-result">
+            <img id="instagram-thumbnail" src="" alt="Thumbnail">
+            <div class="details">
+                <h2 id="instagram-title"></h2>
+                <p id="instagram-description"></p>
+            </div>
+            <div class="download-links">
+                <a id="instagram-download" href="" download>Download</a>
+            </div>
+        </div>
+    </div>
+
+    <script src="instagram_script.js"></script>
+</body>
+</html>
