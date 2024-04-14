@@ -1,0 +1,61 @@
+
+.youtube-container {
+    text-align: center;
+    padding: 50px;
+}
+
+.youtube-container h1 {
+    font-size: 36px;
+    color: #FF0000; 
+    margin-bottom: 20px;
+}
+
+.youtube-container p {
+    font-size: 18px;
+    color: #666;
+    margin-bottom: 30px;
+}
+
+.youtube-form {
+    margin-bottom: 20px;
+}
+
+.youtube-form input[type="text"] {
+    width: 80%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.youtube-form button {
+    padding: 10px 20px;
+    background-color: #FF0000; 
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.youtube-form button:hover {
+    background-color: #cc0000; 
+}
+
+.youtube-result {
+    display: none;
+    margin-top: 30px;
+}
+
+.youtube-result img {
+    max-width: 100%;
+    border-radius: 5px;
+}
+
+.youtube-result h2 {
+    margin-top: 20px;
+}
+
+.youtube-result p {
+    margin-bottom: 10px;
+}
