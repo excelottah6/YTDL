@@ -1,0 +1,61 @@
+
+.tiktok-container {
+    text-align: center;
+    padding: 50px;
+}
+
+.tiktok-container h1 {
+    font-size: 36px;
+    color: #FF2D55; 
+    margin-bottom: 20px;
+}
+
+.tiktok-container p {
+    font-size: 18px;
+    color: #666;
+    margin-bottom: 30px;
+}
+
+.tiktok-form {
+    margin-bottom: 20px;
+}
+
+.tiktok-form input[type="text"] {
+    width: 80%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.tiktok-form button {
+    padding: 10px 20px;
+    background-color: #FF2D55;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.tiktok-form button:hover {
+    background-color: #FF416C; 
+}
+
+.tiktok-result {
+    display: none;
+    margin-top: 30px;
+}
+
+.tiktok-result img {
+    max-width: 100%;
+    border-radius: 5px;
+}
+
+.tiktok-result h2 {
+    margin-top: 20px;
+}
+
+.tiktok-result p {
+    margin-bottom: 10px;
+}
