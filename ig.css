@@ -1,0 +1,61 @@
+
+.instagram-container {
+    text-align: center;
+    padding: 50px;
+}
+
+.instagram-container h1 {
+    font-size: 36px;
+    color: #833AB4; 
+    margin-bottom: 20px;
+}
+
+.instagram-container p {
+    font-size: 18px;
+    color: #666;
+    margin-bottom: 30px;
+}
+
+.instagram-form {
+    margin-bottom: 20px;
+}
+
+.instagram-form input[type="text"] {
+    width: 80%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.instagram-form button {
+    padding: 10px 20px;
+    background-color: #833AB4; 
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.instagram-form button:hover {
+    background-color: #6F1E51;
+}
+
+.instagram-result {
+    display: none;
+    margin-top: 30px;
+}
+
+.instagram-result img {
+    max-width: 100%;
+    border-radius: 5px;
+}
+
+.instagram-result h2 {
+    margin-top: 20px;
+}
+
+.instagram-result p {
+    margin-bottom: 10px;
+}
