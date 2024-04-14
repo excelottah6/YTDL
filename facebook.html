@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Facebook Downloader</title>
+    <link rel="stylesheet" href="fb.css">
+</head>
+<body>
+    <div class="facebook-container">
+        <h1>Facebook Downloader</h1>
+        <form id="facebook-download-form" class="facebook-form">
+            <input type="text" id="facebook-video-url" name="videoUrl" placeholder="Paste Facebook Video URL here">
+            <button type="submit">Download</button>
+        </form>
+        <div id="facebook-result" class="facebook-result">
+            <img id="facebook-thumbnail" src="" alt="Thumbnail">
+            <div class="details">
+                <p id="facebook-description"></p>
+            </div>
+            <div class="download-links">
+                <a id="facebook-download" href="" download>Download</a>
+            </div>
+        </div>
+    </div>
+
+    <script src="fb.js"></script>
+</body>
+</html>
