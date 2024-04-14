@@ -1,0 +1,56 @@
+
+.facebook-container {
+    text-align: center;
+    padding: 50px;
+}
+
+.facebook-container h1 {
+    font-size: 36px;
+    color: #1877F2; 
+    margin-bottom: 20px;
+}
+
+.facebook-container p {
+    font-size: 18px;
+    color: #666;
+    margin-bottom: 30px;
+}
+
+.facebook-form {
+    margin-bottom: 20px;
+}
+
+.facebook-form input[type="text"] {
+    width: 80%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.facebook-form button {
+    padding: 10px 20px;
+    background-color: #1877F2; 
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.facebook-form button:hover {
+    background-color: #2463E1; 
+
+.facebook-result {
+    display: none;
+    margin-top: 30px;
+}
+
+.facebook-result img {
+    max-width: 100%;
+    border-radius: 5px;
+}
+
+.facebook-result p {
+    margin-bottom: 10px;
+}
