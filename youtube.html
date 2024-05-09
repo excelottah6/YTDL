@@ -1,32 +1,48 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>YouTube Downloader</title>
-    <link rel="stylesheet" href="yt.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>YouTube Downloader</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.16/tailwind.min.css">
+  <link rel="stylesheet" href="yt.css">
 </head>
-<body>
-    <div class="youtube-container">
-        <h1>YouTube Downloader</h1>
-        <form id="youtube-download-form" class="youtube-form">
-            <input type="text" id="youtube-video-url" name="videoUrl" placeholder="Paste YouTube Video URL here">
-            <button type="submit">Download</button>
-        </form>
-        <div id="youtube-result" class="youtube-result">
-            <img id="youtube-thumbnail" src="" alt="Thumbnail">
-            <div class="details">
-                <h2 id="youtube-title"></h2>
-                <p id="youtube-description"></p>
-                <p id="youtube-duration"></p>
-            </div>
-            <div class="download-links">
-                <a id="youtube-download-360" href="" download>Download 360p</a>
-                <a id="youtube-download-720" href="" download>Download 720p</a>
-            </div>
+<body class="bg-gray-100">
+  <div class="container mx-auto py-8">
+    <h1 class="text-3xl font-bold text-center mb-6">YouTube Downloader</h1>
+    <form id="youtube-download-form" class="flex justify-center mb-6">
+      <input type="text" id="youtube-video-url" placeholder="Paste YouTube Video URL here" class="border border-gray-300 rounded-l-md px-4 py-2 w-3/4">
+      <button type="submit" class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-r-md">
+        Download
+      </button>
+    </form>
+    <div id="youtube-result" class="bg-white rounded-md shadow-md p-6 hidden">
+      <div class="flex items-center mb-4">
+        <img id="youtube-thumbnail" src="" alt="Thumbnail" class="w-32 h-24 mr-4">
+        <div class="details">
+          <h2 id="youtube-title" class="text-xl font-bold mb-1"></h2>
+          <p id="youtube-description" class="text-gray-600 mb-2"></p>
+          <p id="youtube-duration" class="text-gray-600"></p>
         </div>
+      </div>
+      <div id="loading-animation" class="loading hidden">
+        <div class="spinner"></div>
+      </div>
+      <div class="download-links">
+        <a id="youtube-download-360" href="" download class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded mr-2">Download 360p</a>
+        <a id="youtube-download-720" href="" download class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">Download 720p</a>
+      </div>
     </div>
+  </div>
 
-    <script src="yt.js"></script>
+  <div id="myModal" class="modal">
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <p>Please enter a valid YouTube video URL.</p>
+    </div>
+  </div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.js"></script>
+  <script src="yt.js"></script>
 </body>
 </html>
