@@ -1,30 +1,65 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.16/tailwind.min.css"
+    />
     <title>TikTok Downloader</title>
-    <link rel="stylesheet" href="tt.css">
-</head>
-<body>
+    <link rel="stylesheet" href="tt.css" />
+  </head>
+  <body>
     <div class="tiktok-container">
-        <h1>TikTok Downloader</h1>
-        <form id="tiktok-download-form" class="tiktok-form">
-            <input type="text" id="tiktok-video-url" name="videoUrl" placeholder="Paste TikTok Video URL here">
-            <button type="submit">Download</button>
-        </form>
-        <div id="tiktok-result" class="tiktok-result">
-            <img id="tiktok-thumbnail" src="" alt="Thumbnail">
-            <div class="details">
-                <h2 id="tiktok-title"></h2>
-                <p id="tiktok-description"></p>
-            </div>
-            <div class="download-links">
-                <a id="tiktok-download" href="" download>Download</a>
-            </div>
+      <h1 class="text-3xl font-bold text-center mb-6">TikTok Downloader</h1>
+      <form id="youtube-download-form" class="flex justify-center mb-6">
+        <input
+          type="text"
+          id="youtube-video-url"
+          placeholder="Paste YouTube Video URL here"
+          class="border border-gray-300 rounded-l-md px-4 py-2 w-3/4"
+        />
+        <button
+          type="submit"
+          class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-r-md"
+        >
+          Download
+        </button>
+      </form>
+      <div id="tiktok-result" class="bg-white rounded-md shadow-md p-6 hidden">
+        <div class="flex items-center mb-4">
+          <img
+            id="tiktok-thumbnail"
+            src=""
+            alt="Thumbnail"
+            class="w-32 h-24 mr-4"
+          />
+          <div class="details">
+            <h2 id="tiktok-title" class="text-xl font-bold mb-1"></h2>
+            <p id="tiktok-description" class="text-gray-600 mb-2"></p>
+          </div>
         </div>
+        <div id="loading-animation" class="loading"></div>
+        <div class="download-links">
+          <a
+            id="tiktok-download"
+            href=""
+            download
+            class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded"
+            >Download</a
+          >
+        </div>
+      </div>
+    </div>
+
+    <div id="myModal" class="modal">
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <p>Please enter a valid TikTok video URL.</p>
+      </div>
     </div>
 
     <script src="tt.js"></script>
-</body>
+  </body>
 </html>

@@ -5,23 +5,28 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Instagram Downloader</title>
     <link rel="stylesheet" href="ig.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.16/tailwind.min.css">
 </head>
 <body>
     <div class="instagram-container">
-        <h1>Instagram Downloader</h1>
-        <form id="instagram-download-form" class="instagram-form">
-            <input type="text" id="instagram-video-url" name="videoUrl" placeholder="Paste Instagram Video URL here">
-            <button type="submit">Download</button>
+        <h1 class="text-3xl font-bold text-center mb-6">Instagram Downloader</h1>
+        <form id="instagram-download-form" class="flex justify-center mb-6">
+          <input type="text" id="nstagram-video-url" placeholder="Paste YouTube Video URL here" class="border border-gray-300 rounded-l-md px-4 py-2 w-3/4">
+          <button type="submit" class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-r-md">
+            Download
+          </button>
         </form>
-        <div id="instagram-result" class="instagram-result">
-            <img id="instagram-thumbnail" src="" alt="Thumbnail">
-            <div class="details">
-                <h2 id="instagram-title"></h2>
-                <p id="instagram-description"></p>
-            </div>
+        <div id="instagram-result"  class="bg-white rounded-md shadow-md p-6 hidden">
+            <div class="flex items-center mb-4">
+                <img id="instagram-thumbnail" src="" alt="Thumbnail" class="w-32 h-24 mr-4">
+                <div class="details">
+                  <h2 id="instagram-title" class="text-xl font-bold mb-1"></h2>
+                  <p id="instagram-description" class="text-gray-600 mb-2"></p>
+                </div>
+              </div>
             <div class="download-links">
-                <a id="instagram-download" href="" download>Download</a>
-            </div>
+                <a id="instagram-download" href="" download class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded mr-2">Download</a>
+              </div>
         </div>
     </div>
 
